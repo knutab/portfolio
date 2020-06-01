@@ -1,1 +1,58 @@
-Test site
+---
+layout: default
+title: Home
+---
+
+<section class="resume-section" id="about">
+        <div class="card resume-section-content" >
+          <div class="card-header">
+            About
+          </div>
+            <div class="card-body">
+            <h5 class="card-title">Special title treatment</h5>
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat finibus libero tincidunt lacinia. Nam faucibus urna vel augue auctor tristique. Ut lectus augue, luctus vitae lectus ac, ultrices malesuada risus. Nunc eu ipsum justo. Pellentesque ex metus, hendrerit quis tellus eu, elementum elementum est. Vestibulum quis sapien vel velit scelerisque eleifend non nec diam. Aliquam tristique, arcu vel maximus cursus, tellus mi efficitur dolor, vitae molestie odio ex in sapien. Fusce et ligula neque. Donec et hendrerit metus. Maecenas ac mauris neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sapien lacus, euismod non commodo sit amet, pellentesque pulvinar diam. Ut non enim aliquam, iaculis libero et, dapibus ante. Sed faucibus interdum nunc, id venenatis justo molestie id.
+            Cras dolor nisl, elementum nec faucibus vel, scelerisque id dui. Nulla in ornare felis. Nam mattis velit id purus malesuada, sed maximus neque tincidunt. Quisque elementum volutpat turpis, eu mollis dui pretium in. In euismod convallis nunc. Etiam molestie metus in ante blandit rhoncus. Fusce sit amet varius urna, eu euismod arcu. Quisque eu sagittis urna. Sed tincidunt luctus volutpat. Pellentesque suscipit auctor diam, sed ultricies leo venenatis vel.</p>
+            <br>
+            p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat finibus libero tincidunt lacinia. Nam faucibus urna vel augue auctor tristique. Ut lectus augue, luctus vitae lectus ac, ultrices malesuada risus. Nunc eu ipsum justo. Pellentesque ex metus, hendrerit quis tellus eu, elementum elementum est. Vestibulum quis sapien vel velit scelerisque eleifend non nec diam. Aliquam tristique, arcu vel maximus cursus, tellus mi efficitur dolor, vitae molestie odio ex in sapien. Fusce et ligula neque. Donec et hendrerit metus. Maecenas ac mauris neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sapien lacus, euismod non commodo sit amet, pellentesque pulvinar diam. Ut non enim aliquam, iaculis libero et, dapibus ante. Sed faucibus interdum nunc, id venenatis justo molestie id.
+            Cras dolor nisl, elementum nec faucibus vel, scelerisque id dui. Nulla in ornare felis. Nam mattis velit id purus malesuada, sed maximus neque tincidunt. Quisque elementum volutpat turpis, eu mollis dui pretium in. In euismod convallis nunc. Etiam molestie metus in ante blandit rhoncus. Fusce sit amet varius urna, eu euismod arcu. Quisque eu sagittis urna. Sed tincidunt luctus volutpat. Pellentesque suscipit auctor diam, sed ultricies leo venenatis vel.</p>
+
+            </div>
+        </div>
+        </section>
+
+        <section class="resume-section" id="experience">
+        <div class="card resume-section-content">
+          <div class="card-header">
+            Experience
+          </div>
+          {% for experience in site.data.experience %}
+            <div class="card-body">
+              <div class="row">
+              <div class="col">
+                <h5 class="card-title">{{ experience.company }}</h5>
+              </div>
+              <div class="col text-right">
+                <p> {{experience.start | date: "%B %Y" }} - {{experience.end | date: "%B %Y" }}</p>
+              </div>
+            </div>
+
+            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus volutpat finibus libero tincidunt lacinia. Nam faucibus urna vel augue auctor tristique. Ut lectus augue, luctus vitae lectus ac, ultrices malesuada risus. Nunc eu ipsum justo. Pellentesque ex metus, hendrerit quis tellus eu, elementum elementum est. Vestibulum quis sapien vel velit scelerisque eleifend non nec diam. Aliquam tristique, arcu vel maximus cursus, tellus mi efficitur dolor, vitae molestie odio ex in sapien. Fusce et ligula neque. Donec et hendrerit metus. Maecenas ac mauris neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nam sapien lacus, euismod non commodo sit amet, pellentesque pulvinar diam. Ut non enim aliquam, iaculis libero et, dapibus ante. Sed faucibus interdum nunc, id venenatis justo molestie id.
+            Cras dolor nisl, elementum nec faucibus vel, scelerisque id dui. Nulla in ornare felis. Nam mattis velit id purus malesuada, sed maximus neque tincidunt. Quisque elementum volutpat turpis, eu mollis dui pretium in. In euismod convallis nunc. Etiam molestie metus in ante blandit rhoncus. Fusce sit amet varius urna, eu euismod arcu. Quisque eu sagittis urna. Sed tincidunt luctus volutpat. Pellentesque suscipit auctor diam, sed ultricies leo venenatis vel.</p>
+            <ul>
+              {% for task in experience.main_tasks %}
+                <li>
+                  {{ task }}
+                </li>
+              {% endfor %}
+            </ul>
+            </div>
+          {% endfor %}
+        </div>
+      </section>
+      <br>
+      <br>
+
+
+<br>
+<br>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>

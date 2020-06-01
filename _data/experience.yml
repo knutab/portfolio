@@ -1,0 +1,21 @@
+- company: TrendTech
+  start: "2015-06-01"
+  end: "2016-04-01"
+  position: Junior Analyst/Money Manager
+  main_tasks:
+    - Production of Technical and Quantitative Analyzes
+    - Execution of Orders in connection with Portfolio Management
+    - Create Marketing Material
+    - Test and develop new quantitative Models and Systems (Using Python)
+    - Assist in the morning meeting for the Brokers as well as attend customer meetings
+
+- company: Publicis Media Norway
+  start: "2016-05-01"
+  end: "2018-04-01"
+  position: Digital Analyst
+  main_tasks:
+    - Automating Data Gathering and Reporting
+    - Using Python to Automate Campaign Management and Surveillance
+    - Creating and running a MS SQL database for storing data from multiple sources using SQL and Python
+    - Ad hoc reporing and analysis work, mainly towords optimization and measurment of Programmatic Buying
+    - Solving various tasks using Programming, mainly Python, but also some VBA and SQL
