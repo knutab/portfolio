@@ -25,3 +25,12 @@ section.resume-section {
   padding-bottom: 5rem;
   max-width: 75rem;
 }
+
+.card-columns {
+   column-count: 2;
+}
+@media screen and (max-width: 600px) {
+  .card-columns {
+     column-count: 1;
+  }
+}

@@ -22,3 +22,7 @@ name: Portfolio Page
 markdown: kramdown
 pygments: true
 baseurl: /portfolio
+
+collections:
+  code_notes:
+    output: true

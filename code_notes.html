@@ -1,0 +1,29 @@
+---
+layout: code_notes
+title: Home
+---
+
+
+
+
+{% assign tags =  site.code_notes | map: 'category' | join: ','  | split: ',' | uniq %}
+{% assign sub-tags =  site.code_notes | map: 'sub-category' | join: ','  | split: ',' | uniq %}
+
+{% for tag in tags %}
+  <section class="resume-section" id={{ tag }}>
+    <div class="card resume-section-content w-100" >
+      <div class="card-header">
+        {{ tag }}
+      </div>
+      <div class="card-body">
+    <ul class="card-columns">
+    {% for note in site.code_notes %}
+      {% if note.category contains tag %}
+      <li><a href="{{ site.baseurl }}{{ note.url }}">{{ note.title }}</a></li>
+      {% endif %}
+    {% endfor %}
+    </ul>
+    </div>
+  </div>
+  </section>
+{% endfor %}
